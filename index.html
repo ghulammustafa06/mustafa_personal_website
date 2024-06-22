@@ -2,34 +2,51 @@
 <html lang="en">
 
 <!-- Head Part Start -->
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GM Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GM Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <!-- Body Part Start -->
+
 <body>
 
-    <!-- Heading Part Start -->
-    <header>
-        <a href="#" class="logo"> <span>GM.</span></a>
-        <ul class="navbar">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">Community Work</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        
-        <div class="menu-btn">
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
-    </header>
+  <!-- Navbar Section Start -->
+  <header>
+    <a href="#" class="logo"> <span>GM</span>.</a>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+              width="26">
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+            </svg></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blogs</a></li>
+        <li><a href="#">Community Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">Services</a></li>
+        <li class="hideOnMobile"><a href="#">Blogs</a></li>
+        <li class="hideOnMobile"><a href="#">Community Work</a></li>
+        <li class="hideOnMobile"><a href="#">Contact</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+              viewBox="0 96 960 960" width="26">
+              <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+            </svg></a></li>
+      </ul>
+    </nav>
+  </header>
 
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
