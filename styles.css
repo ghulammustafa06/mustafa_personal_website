@@ -13,7 +13,7 @@ body {
     background-color: hsl(0, 0%, 0%);
 }
 
-/* Header styling */
+/* --------- Header and Navbar ------------- */ 
 header {
     position: relative;
     top: 0;
@@ -43,7 +43,7 @@ header {
 }
 
 
-/* Menu Container Styles */
+/* --------- Menu Container Styles------------- */ 
 
 nav {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -83,6 +83,7 @@ nav li:first-child {
     margin-right: auto;
 }
 
+/* --------- Sidebar or Menu bar ------------- */ 
 .sidebar {
     position: fixed;
     top: 0;
@@ -115,6 +116,7 @@ nav svg {
     fill: white;
 }
 
+/* --------- Responsive adjustments ------------- */ 
 @media(max-width: 800px) {
     .hideOnMobile {
         display: none;
@@ -132,18 +134,19 @@ nav svg {
 }
 
 
-/* Home Section */
-section {
+/* --------- Home Page content Section ------------- */ 
+homepage-container {
     padding: 0 10%;
 }
 .home {
     position: relative;
-    height: 65vh;
+    height: 75vh;
     width: 50%;
-    display: flex;
-    justify-content: space-between;
+    display: align-items;
+    justify-content: space-around;
     align-items: center;
     gap: 30px;
+    margin-top: 85px;
 }
 .home-text span {
     padding: 5px 25px;
@@ -160,6 +163,7 @@ section {
     font-size: 3rem;
     margin: 23px 0;
     color: white;
+   
 }
 .home-text p {
     font-size: 1rem;
@@ -168,17 +172,18 @@ section {
     line-height: 25px;
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 30px;
+    margin-right: 112px;
 }
 
-/* Responsive adjustments  */
+/* --------- Responsive adjustments ------------- */ 
 @media (max-width: 1285px) {
-    section {
+    homepage-container {
         padding: 0 5%;
     }
     .home {
         width: 80%;
         height: auto;
-        margin-top: 30px;
+        margin-top: 40px;
     }
     .home-text h1 {
         font-size: 3rem;
@@ -190,13 +195,14 @@ section {
 }
 
 @media (max-width: 600px) {
-    section {
+    homepage-container {
         padding: 0 2%;
     }
     .home {
         width: 100%;
         flex-direction: column;
         align-items: flex-start;
+        margin-top: 15px;
     }
     .home-text span {
         padding: 2px 15px;
@@ -213,13 +219,14 @@ section {
 }
 
 @media (max-width: 300px) {
-    section {
+    homepage-container {
         padding: 0 2%;
     }
     .home {
         width: 100%;
         flex-direction: column;
         align-items: flex-start;
+        margin-top: 8px;
     }
     .home-text span {
         padding: 3px 20px;
@@ -235,7 +242,7 @@ section {
     }
 }
 
-/* Home page buttons */
+/* --------- Home page buttons ------------- */ 
 .btn {
     display: inline-block;
     padding: 14px 34px;
@@ -268,7 +275,7 @@ section {
 
 }
 
-/* Responsive adjustments */
+/* --------- Responsive adjustments ------------- */ 
 @media (max-width: 768px) {
     .btn, .two {
         padding: 12px 30px;
@@ -276,7 +283,7 @@ section {
     }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 446px) {
     .btn, .two {
         display: flex;
         width: 100%; 
@@ -284,5 +291,110 @@ section {
         margin-left: 0; 
         margin-bottom: 10px; 
         justify-content: center;
+    }
+}
+
+/* --------- main home content and image containers ------------- */ 
+.homepage-container {
+height: 100vh;
+width: 100%;
+padding: 0 3%;
+margin-top: 10px;
+display: flex;
+}
+
+
+.left-container, .right-container {
+ height: 80vh;
+}
+
+.left-container {
+ width: 180%;
+ margin-top: 60px;
+ padding-left: 80px;
+margin-top: 97px;
+}
+
+.right-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.right-container img {
+    display: block;
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+    /* box-shadow: 0 0 1rem #fff; */
+    filter: grayscale(90%); /* Converts the image to black and white */
+}
+
+
+/* ----------  Responsive adjustments ------------------- */
+@media (min-width: 785px) and (max-width: 1180px) {
+    .left-container {
+        width: 60%;
+        padding-left: 2%;
+        margin-top: 60px;
+    }
+
+    .right-container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 767px) {
+    .left-container {
+        width: 100%;
+        padding-left: 5%;
+        margin-top: 50px;
+    }
+    
+    .homepage-container {
+        height: 10%;
+    }
+
+    .right-container {
+        display: none;
+    }
+}
+
+/* ---------- social media home section -------------- */ 
+.share {
+    position: absolute;
+    bottom: 3rem;
+    left: 13%;
+    display: flex;
+    align-items: center;
+}
+
+.social i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 7px;
+    transition: all 0.6s ease-in-out;
+}
+
+.social i:hover {
+    transform: translateY(-10px);
+    background: transparent;
+    color: #ffae00;
+} 
+
+/* --------- Responsive adjustments ------------- */ 
+@media (max-width: 768px) {
+    .share {
+        justify-content: center;
+        padding-left: 17px;
+        padding-top: 70px;
     }
 }

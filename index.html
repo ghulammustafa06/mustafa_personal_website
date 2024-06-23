@@ -2,7 +2,6 @@
 <html lang="en">
 
 <!-- Head Part Start -->
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,12 +29,10 @@
 </head>
 
 <!-- Body Part Start -->
-
 <body>
-
   <!-- Navbar Section Start -->
   <header>
-    <a href="#" class="logo"> <span>GM</span>.</a>
+    <div class="logo"><span>GM</span>.</div> 
     <nav>
       <ul class="sidebar">
         <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
@@ -46,14 +43,17 @@
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
+        <li><a href="#">Projects</a></li>
         <li><a href="#">Blogs</a></li>
         <li><a href="#">Community Works</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
+   
       <ul>
         <li class="hideOnMobile"><a href="#">Home</a></li>
         <li class="hideOnMobile"><a href="#">About</a></li>
         <li class="hideOnMobile"><a href="#">Services</a></li>
+        <li class="hideOnMobile"><a href="#">Projects</a></li>
         <li class="hideOnMobile"><a href="#">Blogs</a></li>
         <li class="hideOnMobile"><a href="#">Community Works</a></li>
         <li class="hideOnMobile"><a href="#">Contact</a></li>
@@ -66,21 +66,34 @@
   </header>
 
   <!-- Home Section Start -->
-  <section class="home">
-    <div class="home-text">
-      <span>Android App Developer</span>
-      <h1>Ghulam Mustafa</h1>
-      <p>👋 Heyy there! I'm Ghulam Mustafa (GM). I'm a Software Engineer and Advocate for Tech Education & Diversity</p>
-      <div class="main-btn"></div>
-      <a href="Resume_Ghulam_Mustafa.pdf" class="btn" download>Download Resume</a>
-      <a href="https://github.com/ghulammustafa06" class="btn two" target="_blank">GitHub</a>
-    </div>
-  </section>
-
-
-
+  <!-- Left Side -->
+  <div class="homepage-container">
+ <div class="left-container">
+  <div class="home-text">
+    <span>Android App Developer</span>
+    <h1>Ghulam Mustafa</h1>
+    <p>👋 Heyy there! I'm Ghulam Mustafa (GM). I'm a Software Engineer and Advocate for Tech Education & Diversity</p>
+    <div class="main-btn"></div>
+    <a href="Resume_Ghulam_Mustafa.pdf" class="btn" download>Download Resume</a>
+    <a href="https://github.com/ghulammustafa06" class="btn two" target="_blank">GitHub</a>
+  </div>
+ </div>
+  <!-- Right Side -->
+ <div class="right-container">
+  <img src="images/homepic.png">
+ </div>
+</div>
+ <!-- Social Icons Side -->
+<div class="share">
+  <div class="social">
+      <a href="https://www.linkedin.com/in/ghulammustafa06/" target="_blank"><i class='bx bxl-linkedin'></i></box-icon></a>
+      <a href="https://www.facebook.com/ghulammustafa06" target="_blank"><i class='bx bxl-facebook'></i></a>
+      <a href="https://www.instagram.com/ghulammustafa06/" target="_blank"><i class='bx bxl-instagram'></i></a>
+      <a href="https://twitter.com/GhulamM40961281" target="_blank"><i class='bx bxl-twitter'></i></a>
+  </div>
+</div>
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
 </body>
-
 </html>
