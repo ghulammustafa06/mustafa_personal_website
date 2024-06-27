@@ -804,3 +804,30 @@ homepage-container {
     text-align: center;
     padding: 0 10px 20px 10px;
 }
+
+/* --------- Responsive adjustments ------------- */
+@media (max-width: 768px) {
+    .project_img {
+        display: none;
+    }
+
+    .sec_my_projects {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left_projects_profile, .right_projects_profile {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .my-project-tittle {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .my-project-subtittle {
+        font-size: 18px;
+        text-align: center;
+    }
+}
