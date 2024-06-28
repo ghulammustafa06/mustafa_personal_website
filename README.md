@@ -74,7 +74,4 @@ Links to my social media profiles:
 Feel free to reach out via the contact section on the website or connect with me on social media:
 - **Email:** [g.mustafa4006@gmail.com](mailto:ghulammustafa@example.com)
 
-## License
-This project is licensed under the MIT License. See the full license text in the [LICENSE](https://github.com/zachlatta/sshtron/blob/master/LICENSE) file.
-
 Thank you for visiting my portfolio website! I hope you find it informative and engaging.
